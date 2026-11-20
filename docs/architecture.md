@@ -30,13 +30,13 @@ OctoFit Tracker is a three-tier application for a school fitness program. The st
 
 Record your plan here before editing code.
 
-- Presentation tier decision:
-- Logic tier decision:
-- Data tier decision:
-- Activity tracking approach:
-- Team management approach:
-- Leaderboard approach:
-- Workout suggestions approach:
+- Presentation tier decision: Add one shared frontend API/loading/error pattern, then wire the four React routes/pages. 
+- Logic tier decision: Re-run in this dependency order: data tests → API tests → frontend tests → both builds.
+- Data tier decision: Start with required fields and sensible defaults; 2. Complete seed data, so dependent API tests have deterministic fixtures.
+- Activity tracking approach: Implement activities routs, including ID validation and 4xx responses. 
+- Team management approach: Implement teams routs, including ID validation and 4xx responses. 
+- Leaderboard approach: Add leaderboard aggregation. 
+- Workout suggestions approach: Add Personalized workout suggestions. 
 
 ## Test plan
 
